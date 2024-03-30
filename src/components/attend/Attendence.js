@@ -59,7 +59,7 @@ const Attendence=()=>{
         }
     }
     return(
-        <div>
+        <div className='attendence'>
            <div className='attendence-box'>
              <h1>ATTENDENCE TRACKER</h1>
            </div>
