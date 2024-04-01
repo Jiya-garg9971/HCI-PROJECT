@@ -6,7 +6,7 @@ import Header from "./Header";
 const ResultCom = () => {
   return (
     <div className="app">
-      <Header />
+      {/* <Header /> */}
      
       <Outlet />
     </div>
