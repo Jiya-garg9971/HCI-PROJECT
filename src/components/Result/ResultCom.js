@@ -7,7 +7,7 @@ const ResultCom = () => {
   return (
     <div className="app">
       {/* <Header /> */}
-     
+     <h1>Student Organiser</h1>
       <Outlet />
     </div>
   );
