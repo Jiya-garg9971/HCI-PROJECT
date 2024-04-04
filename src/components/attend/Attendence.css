@@ -19,7 +19,7 @@ body {
     height: 50px;
   }
   .subject {
-    min-width: 30vw;
+    min-width: 20vw;
   }
   .attended,
   .missed {
