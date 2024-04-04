@@ -106,6 +106,20 @@ code {
 }
 
 /* Header component */
+
+
+.h-16 {
+  height: 4rem; /* Equivalent to 16px */
+}
+
+.sm\:h-20 {
+  height: 5rem; /* Equivalent to 20px */
+}
+
+.md\:h-24 {
+  height: 6rem; /* Equivalent to 24px */
+}
+
 .flex {
   display: flex;
 }
@@ -131,7 +145,7 @@ code {
 }
 
 .md\:bg-green-100 {
-  background-color: #9ae6b4;
+  background-color: #FFCBA4;
 }
 
 .logo-container {
@@ -172,5 +186,18 @@ ul {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/*AppBody*/
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust the space between rows */
 }
 
