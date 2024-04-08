@@ -1,8 +1,12 @@
+:root {
+  --headcolor: #fff;
+  --bgcolor: #fffef7;
+  --main-headcolor:  #e7b895;
+}
 .todopage {
   * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
@@ -20,7 +24,7 @@
     justify-content: start;
     width: 520px;
     min-height: 600px;
-    background: #161a2b;
+    background: #162b19;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -37,19 +41,26 @@
     text-decoration: line-through;
     opacity: 0.4;
   }
+  .head-bar{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
 
   .todo-form {
+    width: 100vw;
     margin-bottom: 32px;
   }
 
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 2px solid var(--main-headcolor);
     outline: none;
     width: 320px;
     background: transparent;
-    color: #fff;
+    color: #000;
   }
 
   .todo-input::placeholder {
@@ -62,12 +73,8 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-    color: #fff;
+    background: var(--main-headcolor);
+    color: #000;
     text-transform: capitalize;
   }
 
@@ -95,26 +102,22 @@
     justify-content: space-between;
     align-items: center;
     margin: 4px auto;
-    color: #fff;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
-    );
+    color: #000;
+    background: var(--main-headcolor);
 
     padding: 16px;
     border-radius: 5px;
     width: 90%;
   }
 
-  .todo-row:nth-child(4n + 1) {
+  /* .todo-row:nth-child(4n + 1) {
     background: linear-gradient(
       90deg,
       rgba(93, 12, 255, 1) 0%,
       rgba(155, 0, 250, 1) 100%
     );
-  }
-
+  } */
+/* 
   .todo-row:nth-child(4n + 2) {
     background: linear-gradient(
       90deg,
@@ -125,7 +128,7 @@
 
   .todo-row:nth-child(4n + 3) {
     background: linear-gradient(90deg, rgb(14, 56, 87) 0%, rgb(4, 38, 82) 100%);
-  }
+  } */
 
   .icons {
     display: flex;
@@ -141,5 +144,8 @@
 
   .edit-icon {
     color: #fff;
+  }
+  .todo-row{
+    background-color: var(--main-headcolor);
   }
 }

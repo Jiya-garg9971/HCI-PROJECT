@@ -2,6 +2,13 @@
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom"; // Import Link
 
+import styled from 'styled-components';
+const styleoflink={
+  color:"black",
+  textDecoration:"none",
+  fontWeight:"bold",
+  fontSize:"15px"
+}
 const Header = () => {
   return (
     <div className='flex justify-between bg-pink-100 shadow-lg mb-2 sm:bg-yellow-50 md:bg-green-100 h-16 sm:h-20 md:h-24'>
@@ -12,23 +19,23 @@ const Header = () => {
         <ul className="flex p-4 m-4">
           <li className="px-4">
             {/* Use Link with absolute path to home */}
-            <Link to="/">Home</Link>
+            <Link to="/" style={styleoflink}>Home</Link>
           </li>
           <li className="px-4">
             {/* Use Link with absolute path to Result */}
-            <Link to="/result">Result</Link>
+            <Link to="/result" style={styleoflink}>Result</Link>
           </li>
           <li className="px-4">
             {/* Use Link with absolute path to Attendance */}
-            <Link to="/attendence">Attendance</Link>
+            <Link to="/attendance" style={styleoflink}>Attendance</Link>
           </li>
           <li className="px-4">
             {/* Use Link with absolute path to Expense */}
-            <Link to="/expense">Expense</Link>
+            <Link to="/expense" style={styleoflink}>Expense</Link>
           </li>
           <li className="px-4">
             {/* Use Link with absolute path to To-Do */}
-            <Link to="/todo">Todo List</Link>
+            <Link to="/todo" style={styleoflink}>Planner</Link>
           </li>
           
         </ul>

@@ -31,11 +31,11 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
         {todo.text}
       </div>
       <div className='icons'>
-        <RiCloseCircleLine
+        <RiCloseCircleLine style={{color:"black"}}
           onClick={() => removeTodo(todo.id)}
           className='delete-icon'
         />
-        <TiEdit
+        <TiEdit  style={{color:"black"}}
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
           className='edit-icon'
         />

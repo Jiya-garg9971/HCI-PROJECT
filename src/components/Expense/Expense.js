@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import HomeComponent from './index.js';
 const Container = styled.div`
-  background-color: white;
+  background-color:  #fffef7;
   color: #0d1d2c;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 
 const Header = styled.div`
-  background-color: White;
+  background-color:  #fffef7;
   color: #0d1d2c;
   display: flex;
   flex-direction: row;

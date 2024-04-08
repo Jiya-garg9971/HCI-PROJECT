@@ -1,15 +1,16 @@
 :root {
   --headcolor: #fff;
   --bgcolor: #fffef7;
-  --main-headcolor: #faa088;
+  --main-headcolor:  #FFCBA4;
 }
 body {
   background-color: var(--bgcolor);
 }
 
-.attendence {
+.attendance {
   h1 {
     background-color: var(--main-headcolor);
+   text-align: center;
   }
   td,
   th {
@@ -19,11 +20,11 @@ body {
     height: 50px;
   }
   .subject {
-    min-width: 20vw;
+    min-width: 15vw;
   }
   .attended,
   .missed {
-    min-width: 20vw;
+    min-width: 15vw;
   }
   .table-box {
     margin: auto;
@@ -41,7 +42,7 @@ body {
   th {
     background-color: var(--headcolor);
     border-radius: 20px;
-    box-shadow: 10px 10px 14px rgb(0, 0, 0);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.395);
     padding: 10px;
     font-size: 20px;
     margin-top: 20%;
@@ -51,9 +52,9 @@ body {
   }
   button {
     background-color: var(--main-headcolor);
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
-    margin: 30px;
+    margin: 20px;
     font-weight: bolder;
     border-radius: 50px;
     border-color: brown;
@@ -61,5 +62,6 @@ body {
   .conclusion {
     font-size: 30px;
     font-weight: bold;
+    margin: 0 35vw;
   }
 }

@@ -4,7 +4,7 @@ import OverViewComponent from "./OverViewComponent";
 import TransactionsComponent from "./TransactionsComponent";
 
 const Container = styled.div`
-  background-color: white;
+  background-color:  #fffef7;
   color: #0d1d2c;
   display: flex;
   flex-direction: column;

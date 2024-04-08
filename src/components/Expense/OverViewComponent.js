@@ -15,7 +15,7 @@ const ExpenseContainer = styled.div`
   gap: 12px;
   margin: 20px;
 `;
-const ExpenseBox = styled.div`
+const ExpenseBox = styled.div`w
   border-radius: 4px;
   border: 1px solid #e6e8e9;
   padding: 15px 20px;
@@ -49,7 +49,7 @@ const AddTransaction = styled.div`
   font-size: 15px;
   background: #0d1d2c;
   display: flex;
-  color: white;
+  color: #fffef7;
   padding: 5px 10px;
   cursor: pointer;
   flex-direction: row;

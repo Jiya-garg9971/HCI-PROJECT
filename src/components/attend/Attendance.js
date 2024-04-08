@@ -4,11 +4,11 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import "./Attendence.css";
+import "./Attendance.css";
 const val=4;
 
 
-const Attendence=()=>{
+const Attendance=()=>{
   const [attended, setAttended] = useState(new Array(5).fill(0));
     const [missed, setMissed] = useState(new Array(5).fill(0));
     const [percent,setPercent]=useState(0);
@@ -54,14 +54,14 @@ const Attendence=()=>{
         console.log(percent);
         setPercent(Math.round(percent,2));
         if(percent<75){
-            console.log("less attendence")
-            toast.error("ATTENDENCE IS LESS THAN 75%")
+            console.log("less attendance")
+            toast.error("ATTENDANCE IS LESS THAN 75%")
         }
     }
     return(
-        <div className='attendence'>
-           <div className='attendence-box'>
-             <h1>ATTENDENCE TRACKER</h1>
+        <div className='attendance'>
+           <div className='attendance-box '>
+             <h1 >ATTENDANCE TRACKER</h1>
            </div>
            <div>
             <table className='table-box'>
@@ -91,11 +91,11 @@ const Attendence=()=>{
            
             </table>
             <div className='conclusion'>
-                <button className='calc-attendence' onClick={calcPercentage}>Attendence:</button><span className='percentage'>{percent}%</span>
+                <button className='calc-attendance' onClick={calcPercentage}>Attendance:</button><span className='percentage'>{percent}%</span>
             </div>
            </div>
             <ToastContainer />
         </div>
     )
 }
-export default Attendence;
+export default Attendance;
