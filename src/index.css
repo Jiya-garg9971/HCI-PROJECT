@@ -3,8 +3,8 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -42,7 +42,9 @@ code {
 }
 
 .p-2 {
-  padding: 0.5rem;
+  width: 200px; /* Fixed width for the buttons */
+  height: 50px; /* Fixed height for the buttons */
+  padding: 0.5rem; /* Adjusted padding for consistent appearance */
 }
 
 .m-2 {
@@ -54,11 +56,14 @@ code {
 }
 
 .rounded-lg {
-  border-radius: 0.5rem;
+  border-radius: 12rem;
 }
 
 .image-center {
   margin: auto;
+}
+.btn-text-lg {
+  font-size: 1.25rem;
 }
 
 /* CgpaCalculator and GpaCalculator components */

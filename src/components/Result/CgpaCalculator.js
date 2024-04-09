@@ -27,7 +27,7 @@ function CgpaCalculator() {
       <h1 className="font-bold my-6 text-2xl text-center ">CGPA Calculator</h1>
       <div>
         <label htmlFor="semester">Semester:</label>
-        <input className="ml-4 mr-4 border border-black p-2"
+        <input className="ml-4 mr-4 border border-black p-2 text-lg"
           type="text"
           id="semester"
           value={currentSemester}
@@ -35,14 +35,14 @@ function CgpaCalculator() {
         />
         <label htmlFor="gpa">GPA:</label>
         <input
-          className="border border-black p-2 ml-4 mr-4"
+          className="border border-black p-2 ml-4 mr-4 text-lg"
           type="number"
           step="0.01"
           id="gpa"
           value={currentGPA}
           onChange={(e) => setCurrentGPA(e.target.value)}
         />
-        <button className="p-2 ml-7 rounded-md bg-black text-white shadow-lg" onClick={addSemester}>Add Semester</button>
+        <button className="p-2 ml-7 rounded-md bg-black text-white shadow-lg text-lg" onClick={addSemester}>Add Semester</button>
       </div>
       <div className='text-center'>
         <h2 className='mt-5'>Semesters:</h2>
@@ -55,7 +55,7 @@ function CgpaCalculator() {
         </ul>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <button className="p-2 mt-10 rounded-md bg-black text-white shadow-lg" onClick={calculateCGPA}>
+        <button className="p-2 mt-10 rounded-md bg-black text-white shadow-lg text-lg" onClick={calculateCGPA}>
           Calculate CGPA
         </button>
       </div>

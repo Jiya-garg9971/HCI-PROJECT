@@ -1,7 +1,7 @@
-// Header.js
+//Header.js
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom"; // Import Link
-
+import { FiLogOut } from 'react-icons/fi';
 import styled from 'styled-components';
 const styleoflink={
   color:"black",
@@ -37,6 +37,10 @@ const Header = () => {
             {/* Use Link with absolute path to To-Do */}
             <Link to="/todo" style={styleoflink}>Planner</Link>
           </li>
+
+          <li className="px-4">
+             <FiLogOut className="logout-icon" style={{ cursor: 'pointer' }} />
+           </li>
           
         </ul>
       </div>
@@ -44,4 +48,9 @@ const Header = () => {
   );
 };
 
+
+
 export default Header;
+
+
+

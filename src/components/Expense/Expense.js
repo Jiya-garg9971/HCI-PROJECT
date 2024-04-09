@@ -30,7 +30,7 @@ const Header = styled.div`
 const Expense = () => {
   return (
     <Container className="App">
-      <Header>Expence Tracker</Header>
+      <Header>Expense Tracker</Header>
       <HomeComponent/>
     </Container>
   )

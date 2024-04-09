@@ -80,27 +80,27 @@ function GpaCalculator() {
       <h2 className="font-bold my-6 text-2xl">GPA Calculator</h2>
       <div>
         <label htmlFor="subjectName">Subject Name:</label>
-        <input className="ml-4 mr-4 border border-black p-2"
+        <input className="ml-4 mr-4 border border-black p-2 text-lg"
           type="text"
           id="subjectName"
           value={subjectName}
           onChange={(e) => setSubjectName(e.target.value)}
         />
         <label htmlFor="credits">Credits:</label>
-        <input className="ml-4 mr-4 border border-black p-2"
+        <input className="ml-4 mr-4 border border-black p-2 text-lg"
           type="number"
           id="credits"
           value={credits}
           onChange={(e) => setCredits(e.target.value)}
         />
         <label htmlFor="marks">Marks (Out of 100):</label>
-        <input className="ml-4 mr-4 border border-black p-2"
+        <input className="ml-4 mr-4 border border-black p-2 text-lg"
           type="number"
           id="marks"
           value={marks}
           onChange={(e) => setMarks(e.target.value)}
         />
-        <button className="p-2 ml-7 rounded-md bg-black text-white shadow-lg" onClick={addSubject}>Add Subject</button>
+        <button className="p-2 ml-7 rounded-md bg-black text-white shadow-lg text-lg" onClick={addSubject}>Add Subject</button>
       </div>
       <div>
         <h3 className='mt-5'>Subjects:</h3>
@@ -110,7 +110,7 @@ function GpaCalculator() {
           ))}
         </ul>
       </div>
-      <button className="p-2 mt-10 rounded-md bg-black text-white shadow-lg" onClick={calculateGpa}>Calculate GPA</button>
+      <button className="p-2 mt-10 rounded-md bg-black text-white shadow-lg text-lg" onClick={calculateGpa}>Calculate GPA</button>
       {gpa !== null && <p>Your GPA is: {gpa}</p>}
     </div>
   );

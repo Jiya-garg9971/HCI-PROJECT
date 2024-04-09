@@ -1,7 +1,7 @@
 // Body.js
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation
-import { GIRLPIC_URL } from '../../utils/constants';
+
 
 function Body() {
   const location = useLocation(); // Get the current location
@@ -13,15 +13,15 @@ function Body() {
       <div>
         {/* Use Link with relative paths */}
         <Link to={`${location.pathname}/gpa`}>
-          <button className='p-2 m-2 bg-orange-400 rounded-lg'>GPA Calculator</button>
+          <button className='p-2 m-2 bg-orange-400 rounded-lg btn-text-lg'>GPA </button>
         </Link>
         {/* Use Link with relative paths */}
         <Link to={`${location.pathname}/cgpa`}>
-          <button className='p-2 m-2 bg-orange-400 rounded-lg'>CGPA Calculator</button>
+          <button className='p-2 m-2 bg-orange-400 rounded-lg btn-text-lg'>CGPA </button>
         </Link>
       </div>
       <div className='flex justify-center'> 
-        <img className='p-3 image-center' src={GIRLPIC_URL} alt="Girl Pic"/>
+        <img className='p-3 image-center' src="https://t3.ftcdn.net/jpg/03/88/07/70/360_F_388077035_RUMOBG7VgNqQ55iiy4o2rGUHsywYsmxA.jpg" alt="Girl Pic"/>
       </div>
     </div>
   );

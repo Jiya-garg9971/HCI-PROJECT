@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { STUDENTPIC_URL } from '../utils/constants';
+
 const AppBody = () => {
   const imglink="https://i.pinimg.com/originals/15/69/b5/1569b5db8e7783ee5a316ac7d5db616a.png";
   const styleofflex={
