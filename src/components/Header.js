@@ -7,9 +7,15 @@ const styleoflink={
   color:"black",
   textDecoration:"none",
   fontWeight:"bold",
-  fontSize:"15px"
+  fontSize:"15px",
+  cursor: 'pointer' 
 }
-const Header = () => {
+ 
+const Header = ({onLogin}) => {
+   const handleLogin = () => {
+    console.log("clicked")
+    onLogin();
+  };
   return (
     <div className='flex justify-between bg-pink-100 shadow-lg mb-2 sm:bg-yellow-50 md:bg-green-100 h-16 sm:h-20 md:h-24'>
       <div className="logo-container">
@@ -39,7 +45,7 @@ const Header = () => {
           </li>
 
           <li className="px-4">
-             <FiLogOut className="logout-icon" style={{ cursor: 'pointer' }} />
+             <FiLogOut className="logout-icon" style={styleoflink} onClick={handleLogin} />
            </li>
           
         </ul>

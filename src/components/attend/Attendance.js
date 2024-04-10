@@ -11,7 +11,8 @@ const val=4;
 const Attendance=()=>{
   const [attended, setAttended] = useState(new Array(5).fill(0));
     const [missed, setMissed] = useState(new Array(5).fill(0));
-    const [percent,setPercent]=useState(0);
+    const [percent,setPercent]=useState(0);const subjects = ["DCCN", "Human Computer Interaction", "Microprocessor", "Compiler Design", "Cloud Computing"];
+
 
     const handleIncrement = (index) => {
         const updatedAttended = [...attended];
@@ -70,7 +71,7 @@ const Attendance=()=>{
                 </tr>
                    {attended.map((value, index) => (
                         <tr key={index}>
-                            <td className='subject'>DCCN</td>
+                            <td className='subject'>{subjects[index]}</td>
                             <td className='attended'>
                                 <div>
                                     <RemoveCircleOutlineIcon onClick={() => handleDecrement(index)} />

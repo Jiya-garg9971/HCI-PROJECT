@@ -45,7 +45,8 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
-    setIsLoggedIn(true);
+    console.log(isLoggedIn);
+    setIsLoggedIn(!isLoggedIn);
   };
 
   return (
@@ -59,7 +60,7 @@ function App() {
           }}>STUDENT ORGANISER</h1>
 
         {!isLoggedIn && <Login onLogin={handleLogin} />}
-        {isLoggedIn && <Header />}
+        {isLoggedIn && <Header onLogin={handleLogin}/>}
       </div>
       {isLoggedIn && (
         <Routes>

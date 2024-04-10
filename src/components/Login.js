@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GIRLPIC_URL } from '../utils/constants';
-
+import "./Login.css"
 function Login({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = () => {
+    console.log("clicked")
     onLogin(); // Indicate successful login
     navigate('/'); // Redirect to the main application
   };
 
+  const imgop2="https://thesend.academy/wp-content/uploads/2023/05/SA_headerimage_bloborange-1280x1109.png";
+  const imgop1="https://seoaudit.agency/wp-content/uploads/2020/06/professional-Brochure-Design-with-the-Best-Graphics-Designer-in-Bangladesh.png"
   const loginStyles = {
     container: {
       display: 'flex',
@@ -54,15 +57,33 @@ function Login({ onLogin }) {
       backgroundColor: '#0056b3',
     },
     girlPic: {
-        width: '400px', // Adjust width as needed
+        width: '35vw', // Adjust width as needed
         height: 'auto', // Automatically adjust height to maintain aspect ratio
       },
   };
 
   return (
-    <div style={loginStyles.container}>
-      <div style={loginStyles.loginBox}>
-        <h2>Please Enter Your Credentials</h2>
+   <div className='login-page'>
+    <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Account 
+            </div>
+            <div class="title signup">
+               Account
+            </div>
+     </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" />
+               <input type="radio" name="slide" id="signup"/>
+               <label htmlFor="login" class="slide login">Login</label>
+               <label htmlFor="signup" class="slide signup">SignUp</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
         <input
           type="text"
           placeholder="Email"
@@ -70,6 +91,8 @@ function Login({ onLogin }) {
           onChange={(e) => setEmail(e.target.value)}
           style={loginStyles.input}
         />
+        </div>
+    <div class="field">
         <input
           type="password"
           placeholder="Password"
@@ -77,7 +100,33 @@ function Login({ onLogin }) {
           onChange={(e) => setPassword(e.target.value)}
           style={loginStyles.input}
         />
-        <button
+
+         </div>
+                  <div class="pass-link">
+                     <a href="#">Reset password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     
+                     <input type="submit" value="Login"  onClick={handleLogin}/>
+                  </div>
+                  <div class="signup-link">
+                     Don't Have Account? <a href="">Create A New</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" required/>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required/>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm Password" required/>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <button
           onClick={handleLogin}
           style={loginStyles.button}
           onMouseOver={(e) => (e.target.style.backgroundColor = loginStyles.buttonHover.backgroundColor)}
@@ -85,9 +134,14 @@ function Login({ onLogin }) {
         >
           Login
         </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      
       </div>
       <div className='flex justify-center'>
-        <img style={loginStyles.girlPic} src={GIRLPIC_URL} alt="Girl Pic" />
+        <img style={loginStyles.girlPic} src={imgop2} alt="Girl Pic" />
       </div>
     </div>
   );
