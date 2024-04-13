@@ -202,5 +202,20 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 20px; /* Adjust the space between rows */
+  
 }
+
+.center-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 5px;
+  
+}
+
+.center-table th,
+.center-table td {
+  padding: 5px; 
+}
+
 
